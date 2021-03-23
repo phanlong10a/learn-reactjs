@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import ChildrenLifeCycle from './children';
 class AppLifeCycle extends React.Component{
     ///// mounting
@@ -6,7 +6,8 @@ class AppLifeCycle extends React.Component{
         super(props);
         //khai bao state
         this.state = {
-            count : 0
+            count : 0,
+            show: true,
         }
 
         // chay dau tien va duy nhat 1 lan trong mounting
@@ -24,11 +25,20 @@ class AppLifeCycle extends React.Component{
         console.log('render mounting da chay')
     }
 
+    showHideComponent = () => {
+      this.setState({
+        show: !this.state.show,
+      })
+    }
+
     render() {
       return (
         <>
           <h1> This is app AppLifeCycle </h1> 
-          <ChildrenLifeCycle></ChildrenLifeCycle>
+          {this.state.show && 
+          <ChildrenLifeCycle count={this.state.count}></ChildrenLifeCycle>}
+          
+          <button type='button' onClick = {()=>this.showHideComponent()}>hide component</button>
         </>
       )
     };
