@@ -16,9 +16,13 @@ code {
 height:100vh;
 align-content: center;
 }
-li > button
+/* li > button
 {
   position: absolute;
   right: 3px;
   margin-top: 0;
-}
+} */
+/* .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link {
+  width: 30px;
+  height: 30px;
+} */
