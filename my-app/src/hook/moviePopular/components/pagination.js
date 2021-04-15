@@ -9,10 +9,11 @@ const PaginationMovie = (props) => {
                     <div style ={{textAlign:'center', marginTop: '30px'}}>
                     <Pagination 
                     pageSize={5}
-                    current={props.page}
-                    total={props.totalItem}
+                    current={props.current}
+                    total={props.total}
                     showSizeChanger={false} 
-                    onChange="" />
+                    onChange={props.change}
+                     />
                     </div>
                 </Col>
             </Row>

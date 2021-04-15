@@ -19,7 +19,7 @@ class Global extends PureComponent{
                         return <Skeleton active/>
                     }
                     return(
-<div className="site-card-wrapper">
+        <div className="site-card-wrapper">
                     <Row gutter={16}>
                         <Col span={8}>
                             <Card title="Confirm" bordered={true}>

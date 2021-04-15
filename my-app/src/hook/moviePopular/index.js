@@ -4,6 +4,8 @@ import ListMovie from './components/listMovie';
 import PaginationMovie from './components/pagination';
 import {popularityMovies} from './sevice/api';
 import SwitchLanguage from './components/switchLanguage';
+import HeaderMovie from './components/header'
+import MovieProvider from './context/userProvider'
 
 
 
@@ -30,17 +32,22 @@ const AppMovie = () => {
             setLoading(false);
         }
         getDataFromApi();
-    },[language])
+    },[language, page])
      
     const changeLanguage = (lang = 'en-US') => {
         setLanguage(lang);
     }   
-    
+    const changePage = (p = 1) => {
+        setPage(p);
+    }
     console.log(movies);
     return(
         <>
             <Row>
                 <Col span={20} offset={2}>
+                    <MovieProvider>
+                        <HeaderMovie/>
+                    </MovieProvider>
                     <SwitchLanguage
                         change = {setLanguage}
                     />
@@ -51,8 +58,10 @@ const AppMovie = () => {
                     
                     />
                     { movies.length > 0 && <PaginationMovie
-                        page={page}
+                        current={page}
                         totalItems={totalItems}
+                        change={changePage}
+                        total={totalItems}
                     />}
                 </Col>
             </Row>
