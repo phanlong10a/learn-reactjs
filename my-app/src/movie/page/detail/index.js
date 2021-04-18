@@ -15,7 +15,7 @@ const DetailMovie = () => {
     const [detail, setDetail] = useState({})
     const {id} = useParams();
     const [isOpen, setOpen] = useState(false)
-    const [link, setLink] = useState([])
+    
 
     useEffect(()=>{
         const getData = async () =>{
@@ -38,6 +38,7 @@ const DetailMovie = () => {
         )
 
     }
+    const link = helper.IsEmptyObject(detail.videos.results) ?  'https://www.youtube.com/watch?v=fXpJlk0sTGU' : detail.videos.results[0].key 
     
     return (<MasterLayout>
         <Row style={{margin:'30px 0px'}}>
@@ -54,9 +55,12 @@ const DetailMovie = () => {
                 <p>lượt bình chọn: {detail.vote_count}</p>
                 <React.Fragment>
                         
-                        <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId={detail.videos.results[0].key} onClose={() => setOpen(false)} />
-            
-                        <Button type="primary" onClick={()=> setOpen(true)}>Xem demo</Button >
+                            
+                            <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId={link} onClose={() => setOpen(false)} />
+                               
+                            <Button type="primary" onClick={()=> setOpen(true)}>Xem demo</Button >
+                        
+                        
                 </React.Fragment>
             </Col>
             <Col span={8}>
