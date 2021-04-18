@@ -33,7 +33,7 @@ const HeaderMovie = () => {
             <Link to="/search">Tìm kiếm</Link>
             </Menu.Item>
         <Menu.Item key="/popular">  <Link to="/popular">Phổ biến</Link></Menu.Item>
-        <Menu.Item key="/upcoming">Sắp chiếu</Menu.Item>
+        <Menu.Item key="/upcoming">  <Link to='/upcoming'>Sắp chiếu</Link></Menu.Item>
         {
            info === null &&
           <Menu.Item key="/login">  <Link to="/login">Đăng nhập</Link></Menu.Item>
@@ -52,4 +52,4 @@ const HeaderMovie = () => {
     </Header>
     )
 }
-export default React.memo(HeaderMovie)
+export default React.memo(HeaderMovie)  

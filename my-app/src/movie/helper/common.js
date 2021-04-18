@@ -19,11 +19,11 @@ const getTokenFromLocalStorage = () =>{
 const decodeTokenFromLocalStorage = () => {
     const token = localStorage.getItem('token_login')
     let tokenDecode = null;
-    console.log(token)
+    // console.log(token)
     if (token !== null){
         tokenDecode = jwt.verify(token, KEY_TOKEN);
     }
-    console.log(tokenDecode)
+    // console.log(tokenDecode)
     return tokenDecode;
 
 }
@@ -41,6 +41,7 @@ const isAuthenticated = () => {
         return true;
     } return false
 }
+
 
 export const helper = {
     saveToken,

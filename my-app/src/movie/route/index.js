@@ -8,10 +8,11 @@ import {
   Redirect
 } from "react-router-dom";
 
-
+const Upcoming = lazy(()=> import('../page/upcoming/index'));
 const SearchPage = lazy(()=> import('../page/search/index'));
 const PopularPage= lazy(()=> import('../page/popular/index'));
 const Login = lazy(()=> import('../page/login/index'));
+const DetailPage = lazy(()=> import('../page/detail/index'));
 const PrivateRouter = ({children, ...rest}) =>{
   const auth = helper.isAuthenticated();
   return (
@@ -59,6 +60,12 @@ const RouterMovie = () => {
           </Logined>
           <PrivateRouter path="/logout">
             <SearchPage />
+          </PrivateRouter>
+          <PrivateRouter path="/upcoming">
+            <Upcoming />
+          </PrivateRouter>
+          <PrivateRouter path="/movie-detail/:slug~:id">
+            <DetailPage />
           </PrivateRouter>
           <PrivateRouter path="/">
             <SearchPage />

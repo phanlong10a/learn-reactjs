@@ -32,7 +32,7 @@ const LoginPages =()=>{
         let pass = values.password;
         let token = api.checkUserLogin(user, pass);
         if(token !== null){
-          console.log(token);
+          // console.log(token);
           setErrorLogin('');
           helper.saveToken(token);
           history.push('/')
