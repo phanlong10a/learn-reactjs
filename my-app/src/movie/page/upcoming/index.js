@@ -19,8 +19,8 @@ const { RangePicker } = DatePicker;
     const getChooseDate = async (t1, t2,p=1) => {
         setLoading(true);
         setPage(p);
-        let setFromDate = t2[0];
-        let setToDate = t2[1];
+        setFromDate(t2[0]);
+        setToDate(t2[1]);
         let movies = await api.getDataUpcomingMovie(fdate,tdate,page);
         if(movies.hasOwnProperty('results')){
             setComingMovies(movies.results);

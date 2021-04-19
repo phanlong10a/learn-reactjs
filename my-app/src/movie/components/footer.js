@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout} from 'antd';
 
-const { Header, Content, Footer } = Layout;
+const {  Footer } = Layout;
 
 
 const FooterMovie = () => {

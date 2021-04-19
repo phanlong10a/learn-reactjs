@@ -2,7 +2,7 @@ import React from 'react'
 import HeaderMovie from './header'
 import FooterMovie from './footer'
 import PropTypes from 'prop-types'
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout} from 'antd';
 import styled from 'styled-components'
 
 

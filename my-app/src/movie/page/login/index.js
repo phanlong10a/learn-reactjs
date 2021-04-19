@@ -1,4 +1,4 @@
-import {Row,Col,Form, Input, Button, Checkbox} from 'antd';
+import {Row,Col,Form, Input, Button} from 'antd';
 import { useState } from 'react';
 import { useHistory } from "react-router-dom";
 import { api } from "../../service/api"
