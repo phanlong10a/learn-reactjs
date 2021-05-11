@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b94c8e0c-4488-45a5-b981-782d5c70db70" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/my-app/src/corona/components/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/corona/components/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/hook/moviePopular/components/pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/hook/moviePopular/components/pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/hook/moviePopular/components/switchLanguage.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/hook/moviePopular/components/switchLanguage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/hook/moviePopular/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/hook/moviePopular/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1r1WVqhaPPsu8p3tQ3ebFpnVJNF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b94c8e0c-4488-45a5-b981-782d5c70db70" name="Default Changelist" comment="" />
+      <created>1618144106788</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618144106788</updated>
+      <workItem from="1618144112140" duration="65000" />
+    </task>
+    <servers />
+  </component>
+</project>
